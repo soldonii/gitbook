@@ -1,0 +1,4 @@
+root: ./posts
+
+​structure:
+  readme: README.md
