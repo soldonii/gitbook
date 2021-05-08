@@ -44,6 +44,8 @@ function area(shape: Shape) {
 
 그러나 확장성의 관점에서는 상당히 취약하다는 느낌이 듭니다. 만약 `Triangle` 이라는 타입이 추가되어야 하는 상황이고, `Triangle`이 `width`와 `height`를 property로 가지게 된다면 `if ("width" in shape)` 코드 만으로는 특정 타입으로 좁힐 수가 없습니다. `Rectangle`과 `Triangle` 모두 `"width"` property를 가지기 때문입니다.
 
+
+
 ### 2. 공통 property로 좁히기
 
 이런 문제를 해결하기 위해 모든 shape에 공통 property를 줄 수도 있습니다.
@@ -79,6 +81,8 @@ function area(shape: Shape) {
 `name` property는 모든 shape가 공동으로 가지면서도 그 값은 모두 다르므로 타입을 좁히기에 용이합니다.
 
 여기서 유저가 직접 정의하는 type guard의 방식을 활용해 볼 수 있습니다.
+
+
 
 ### 3. User defined type guards
 
@@ -123,6 +127,8 @@ function area(shape: Shape) {
 }
 ```
 
+
+
 그러나 인라인으로 빼지 않고도 타입스크립트 컴파일러에게 타입을 알려줄 수도 있습니다. 유저가 직접 type guard를 해주면 가능합니다.
 
 함수의 return type을 명시적으로 정의해주면 되는데요, 기본 문법은 `parameter is Type`처럼 작성하면 됩니다.
@@ -159,12 +165,13 @@ function area(shape: Shape) {
 
 `isSquare` 함수의 return type을 명시적으로 작성해주었는데요, 만약 `isSquare` 함수가 `true`를 리턴한다면, 그 이후에 등장하는 `shape`는 `Square` 타입으로 좁혀질 수 있습니다. 👻
 
+
+
 📕 **References**
 
 - https://www.typescriptlang.org/docs/handbook/2/narrowing.html#using-type-predicates
 
 {% hint style="info" %}
-**정확한 내용은 공식 문서를 참고 부탁드립니다.**
-
-**잘못된 내용은 지적해주시면 수정하겠습니다.** 🙏🏻
+**정확한 내용은 공식 문서를 참고 부탁드립니다.  
+잘못된 내용은 지적해주시면 수정하겠습니다. 🙏🏻**
 {% endhint %}
