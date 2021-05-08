@@ -3,12 +3,13 @@ description: 유저가 정의한 타입으로 narrowing하는 방법
 slug: typescripts/user-defined-type-guards
 ---
 
-TypeScript를 사용하다보면, 한 타입이 여러 개의 타입을 가지는 경우가 존재합니다.
-예를 들어, `type Foo = string | number | string[] | number[]` 같은 타입이 존재할 수 있는데, 여러 union 타입 중 어떤 타입에 해당되는지에 따라 로직을 나누어 처리할 경우가 생깁니다.
+# User defined type guards
+
+TypeScript를 사용하다보면, 한 타입이 여러 개의 타입을 가지는 경우가 존재합니다. 예를 들어, `type Foo = string | number | string[] | number[]` 같은 타입이 존재할 수 있는데, 여러 union 타입 중 어떤 타입에 해당되는지에 따라 로직을 나누어 처리할 경우가 생깁니다.
 
 이렇듯 TypeScript에서는 내가 처리해야 하는 type으로 범위를 좁혀나가는 방식을 종종 활용하게 되는데요, 이렇게 타입을 좁혀나가는 것을 type narrowing이라고 합니다. 이 포스트에서는 내가 원하는 type으로 narrowing하는 방법을 알아보고자 합니다.
 
-# Type Narrowing
+## Type Narrowing
 
 상황에 따라 여러 방법으로 타입을 좁힐 수 있습니다.
 
@@ -169,9 +170,12 @@ function area(shape: Shape) {
 
 📕 **References**
 
-- https://www.typescriptlang.org/docs/handbook/2/narrowing.html#using-type-predicates
+* [https://www.typescriptlang.org/docs/handbook/2/narrowing.html\#using-type-predicates](https://www.typescriptlang.org/docs/handbook/2/narrowing.html#using-type-predicates)
 
 {% hint style="info" %}
 **정확한 내용은 공식 문서를 참고 부탁드립니다.  
 잘못된 내용은 지적해주시면 수정하겠습니다. 🙏🏻**
 {% endhint %}
+
+\*\*\*\*
+
