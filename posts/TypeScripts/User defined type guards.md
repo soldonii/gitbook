@@ -12,7 +12,7 @@ TypeScript를 사용하다보면, 한 타입이 여러 개의 타입을 가지�
 
 상황에 따라 여러 방법으로 타입을 좁힐 수 있습니다.
 
-### 1. 공통되지 않은 property로 좁히기
+### 1. 다른 property로 좁히기
 
 ```typescript
 type Square = {
@@ -80,7 +80,7 @@ function area(shape: Shape) {
 
 여기서 유저가 직접 정의하는 type guard의 방식을 활용해 볼 수 있습니다.
 
-### 3. user defined type guards로 좁히기
+### 3. User defined type guards
 
 ```typescript
 type Square = {
@@ -159,12 +159,12 @@ function area(shape: Shape) {
 
 `isSquare` 함수의 return type을 명시적으로 작성해주었는데요, 만약 `isSquare` 함수가 `true`를 리턴한다면, 그 이후에 등장하는 `shape`는 `Square` 타입으로 좁혀질 수 있습니다. 👻
 
-{% hint style="info" %}
 📕 **References**
 
 - https://www.typescriptlang.org/docs/handbook/2/narrowing.html#using-type-predicates
-  {% endhint %}
 
 {% hint style="info" %}
-**정확한 것은 공식 문서를 참고 부탁드리고, 틀린 내용은 지적해주시면 수정하겠습니다.** 🙏🏻
+**정확한 내용은 공식 문서를 참고 부탁드립니다.**
+
+**잘못된 내용은 지적해주시면 수정하겠습니다.** 🙏🏻
 {% endhint %}
