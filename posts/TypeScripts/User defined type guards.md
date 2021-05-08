@@ -44,8 +44,6 @@ function area(shape: Shape) {
 
 그러나 확장성의 관점에서는 상당히 취약하다는 느낌이 듭니다. 만약 `Triangle` 이라는 타입이 추가되어야 하는 상황이고, `Triangle`이 `width`와 `height`를 property로 가지게 된다면 `if ("width" in shape)` 코드 만으로는 특정 타입으로 좁힐 수가 없습니다. `Rectangle`과 `Triangle` 모두 `"width"` property를 가지기 때문입니다.
 
----
-
 ### 2. 공통 property로 좁히기
 
 이런 문제를 해결하기 위해 모든 shape에 공통 property를 줄 수도 있습니다.
@@ -163,10 +161,10 @@ function area(shape: Shape) {
 
 {% hint style="info" %}
 📕 **References**
-https://www.typescriptlang.org/docs/handbook/2/narrowing.html#using-type-predicates
-{% endhint %}
+
+- https://www.typescriptlang.org/docs/handbook/2/narrowing.html#using-type-predicates
+  {% endhint %}
 
 {% hint style="info" %}
-**학습하며 배운 내용을 정리한 것이므로 틀린 내용이 있을 수 있습니다.**
 **정확한 것은 공식 문서를 참고 부탁드리고, 틀린 내용은 지적해주시면 수정하겠습니다.** 🙏🏻
 {% endhint %}
