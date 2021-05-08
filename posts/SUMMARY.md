@@ -5,4 +5,4 @@
 ## TypeScripts
 
 * [User defined type guards](typescripts/user-defined-type-guards.md)
-* [readonly-arrays-and-tuples](typescripts/readonly-arrays-and-tuples.md)
+* [Readonly arrays and tuples](typescripts/readonly-arrays-and-tuples.md)

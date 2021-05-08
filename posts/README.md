@@ -25,3 +25,7 @@ description: Web Frontend Engineer 도현솔입니다.
 
 하루에 1%씩 성장하기 위해, 회사에서 일하며 부딪힌 문제들과 개인적으로 학습하며 배운 것들을 기록할 예정입니다.
 
+## 👀 Contacts
+
+- [Github](https://github.com/soldonii)
+- [LinkedIn](https://www.linkedin.com/in/hyunsol-do-91058a189/)
