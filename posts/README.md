@@ -21,6 +21,6 @@ description: Web Frontend Engineer 도현솔입니다.
 
 > #### 하루에 1%씩 성장하면, 1년 뒤 약 37배 성장할 수 있다.
 
-![아주 작은 습관의 힘](./assets/power-of-tiny-gains.jpeg)
+![아주 작은 습관의 힘](./power-of-tiny-gains.jpeg)
 
 하루에 1%씩 성장하기 위해, 회사에서 일하며 부딪힌 문제들과 개인적으로 학습하며 배운 것들을 기록할 예정입니다. 👨🏻‍💻

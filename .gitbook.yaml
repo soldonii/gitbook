@@ -1,4 +1,4 @@
 root: ./posts
 
 ​structure:
-  readme: README.md
+  readme: ./intro/README.md
