@@ -1,7 +1,8 @@
 # Table of contents
 
-- [Intro](README.md)
+* [Intro](README.md)
 
-## TypeScripts <a id="typescripts"></a>
+## TypeScripts
 
-- [User defined type guards](typescripts/user-defined-type-guards.md)
+* [User defined type guards](typescripts/user-defined-type-guards.md)
+
