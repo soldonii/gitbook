@@ -18,12 +18,12 @@ TypeScript를 사용하다보면, 한 타입이 여러 개의 타입을 가지�
 ```typescript
 type Square = {
   size: number;
-};
+}
 
 type Rectangle = {
   width: number;
   height: number;
-};
+}
 
 type Shape = Square | Rectangle;
 
@@ -55,13 +55,13 @@ function area(shape: Shape) {
 type Square = {
   name: "square";
   size: number;
-};
+}
 
 type Rectangle = {
   name: "rectangle";
   width: number;
   height: number;
-};
+}
 
 type Shape = Square | Rectangle;
 
@@ -91,13 +91,13 @@ function area(shape: Shape) {
 type Square = {
   name: "square";
   size: number;
-};
+}
 
 type Rectangle = {
   name: "rectangle";
   width: number;
   height: number;
-};
+}
 
 type Shape = Square | Rectangle;
 
@@ -138,13 +138,13 @@ function area(shape: Shape) {
 type Square = {
   name: "square";
   size: number;
-};
+}
 
 type Rectangle = {
   name: "rectangle";
   width: number;
   height: number;
-};
+}
 
 type Shape = Square | Rectangle;
 
